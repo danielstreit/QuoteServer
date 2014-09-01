@@ -10,7 +10,7 @@ listener.on('trade', function (data) {
     date: Date.now(),
     price: data.price,
     amount: data.amount,
-    cCurrency: 'BTC',
+    currency: 'BTC',
     tCurrency: 'USD',
     exchangeTradeID: Date.now()
   };

@@ -6,7 +6,7 @@ var tradeSchema = new mongoose.Schema({
   date: Date,
   price: Number,
   amount: Number,
-  cCurrency: String, // cryptocurrency
+  currency: String, // currency being traded
   tCurrency: String, // transaction currency
   exchangeTradeID: Number
 });

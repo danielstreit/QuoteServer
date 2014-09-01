@@ -10,7 +10,7 @@ listener.bind('trade', function(rawTrade) {
 		date: Date.now(),
 		price: rawTrade.price,
 		amount: rawTrade.amount,
-    cCurrency: 'BTC',
+    currency: 'BTC',
     tCurrency: 'USD',
 		exchangeTradeID: rawTrade.id
 	};
