@@ -1,8 +1,7 @@
 
 var port = process.env.PORT || 3000;
 var tradeEmitter = require('./tradeEmitter');
-var app = require('express')();
-var server = require('http').Server(app);
+var server = require('http').Server();
 var io = require('socket.io')(server);
 server.listen(port);
 
