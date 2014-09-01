@@ -1,5 +1,6 @@
 var tradeEmitter = require('./tradeEmitter');
-var io = require('socket.io')();
+var server = require('http').Server();
+var io = require('socket.io')(server);
 var port = process.env.PORT || 3000;
 
 
