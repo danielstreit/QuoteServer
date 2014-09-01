@@ -1,0 +1,25 @@
+{
+  "name": "QuoteServer",
+  "version": "0.0.0",
+  "description": "A quote server for cryptocurrencies",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/danielstreit/QuoteServer.git"
+  },
+  "author": "Daniel Streit",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/danielstreit/QuoteServer/issues"
+  },
+  "homepage": "https://github.com/danielstreit/QuoteServer",
+  "dependencies": {
+    "pusher-client": "^0.2.2",
+    "request": "^2.40.0",
+    "socket.io": "^1.0.6",
+    "socket.io-client": "^1.0.6"
+  }
+}
