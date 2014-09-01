@@ -10,6 +10,8 @@ listener.bind('trade', function(rawTrade) {
 		date: Date.now(),
 		price: rawTrade.price,
 		amount: rawTrade.amount,
+    cCurrency: 'BTC',
+    tCurrency: 'USD',
 		exchangeTradeID: rawTrade.id
 	};
 	bitstamp.emit('trade', trade);

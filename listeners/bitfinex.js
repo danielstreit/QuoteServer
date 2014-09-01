@@ -25,6 +25,8 @@ setInterval(function() {
 				date: rawTrades[i].timestamp * 1000,
 				price: parseFloat(rawTrades[i].price),
 				amount: parseFloat(rawTrades[i].amount),
+				cCurrency: 'BTC',
+				tCurrency: 'USD',
 				exchangeTradeID: rawTrades[i].tid
 			};
 			bitfinex.emit('trade', trade);

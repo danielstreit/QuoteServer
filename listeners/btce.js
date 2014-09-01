@@ -25,6 +25,8 @@ setInterval(function() {
 					date: rawTrades[i].date * 1000,
 					price: rawTrades[i].price,
 					amount: rawTrades[i].amount,
+					cCurrency: 'BTC',
+					tCurrency: 'USD',
 					exchangeTradeID: rawTrades[i].tid
 				};
 				btce.emit('trade', trade);

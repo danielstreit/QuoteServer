@@ -6,6 +6,8 @@ var tradeSchema = new mongoose.Schema({
   date: Date,
   price: Number,
   amount: Number,
+  cCurrency: String, // cryptocurrency
+  tCurrency: String, // transaction currency
   exchangeTradeID: Number
 });
 var Trade = mongoose.model('Trade', tradeSchema);
@@ -24,17 +26,6 @@ mongo.saveTrade = function(trade) {
   t.save(function(error, t) {
     if (error) console.error(error);
   });
-};
-
-// Fetch trades greater than min (defaults to 0);
-mongo.getTrades = function(min, callback) {
-  min = min || 0;
-  callback = callback || function() {};
-  Trade.find()
-      .where('amount').gt(min)
-      .limit(20)
-      .sort('-date')
-      .exec(callback);
 };
 
 module.exports = mongo;

@@ -10,6 +10,8 @@ listener.on('trade', function (data) {
     date: Date.now(),
     price: data.price,
     amount: data.amount,
+    cCurrency: 'BTC',
+    tCurrency: 'USD',
     exchangeTradeID: Date.now()
   };
   hitbtc.emit('trade', trade);
